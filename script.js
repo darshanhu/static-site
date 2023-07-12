@@ -7,8 +7,17 @@ function toggle() {
   if (active) {
     toggle.classList.add("active");
     text.innerHTML = "ON";
+
+    pendo.track("TOGGLE_STATUS", {
+      toggleState: "ON"
+    });
+    
   } else {
     toggle.classList.remove("active");
     text.innerHTML = "OFF";
+
+     pendo.track("TOGGLE_STATUS", {
+      toggleState: "OFF"
+    });
   }
 }
