@@ -11,6 +11,8 @@ function toggle() {
     pendo.track("TOGGLE_STATUS", {
       toggleState: "ON"
     });
+
+    console.log("Pendo Track Event Called with status 'ON'")
     
   } else {
     toggle.classList.remove("active");
@@ -19,5 +21,7 @@ function toggle() {
      pendo.track("TOGGLE_STATUS", {
       toggleState: "OFF"
     });
+
+    console.log("Pendo Track Event Called with status 'OFF'")
   }
 }
