@@ -25,3 +25,8 @@ function toggle() {
     console.log("Pendo Track Event Called with status 'OFF'")
   }
 }
+
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
