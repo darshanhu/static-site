@@ -27,6 +27,6 @@ function toggle() {
 }
 
 
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
+$('#exampleModal').on('shown.bs.modal', function () {
+  // $('#myInput').trigger('focus')
 })
