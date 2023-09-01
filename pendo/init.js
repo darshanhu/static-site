@@ -12,7 +12,7 @@
 
         pendo.initialize({
             visitor: {
-                
+                id: variable,
                 email:        "",
                 full_name:    "Darshan Hulswar"
             },
