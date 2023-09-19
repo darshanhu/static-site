@@ -14,7 +14,8 @@
             visitor: {
                 id: "SOFTLAND_ACCOUNT_DARSHAN",
                 email:        "",
-                full_name:    "Darshan Hulswar"
+                full_name:    "Darshan Hulswar",
+                typeTesting: "string"
             },
 
             account: {
