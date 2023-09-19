@@ -15,7 +15,7 @@
                 id: "SOFTLAND_ACCOUNT_DARSHAN",
                 email:        "",
                 full_name:    "Darshan Hulswar",
-                typeTesting: "string"
+                typeTesting: 99
             },
 
             account: {
