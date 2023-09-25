@@ -22,7 +22,8 @@
                 id:           'SOFTLAND_ACCOUNT_1',
                 name:         "SOFTLAND_ACCOUNT",
                 // creationDate: new Date().toISOString().slice(0, 10)
-                creationDate: 22
+                creationDate: 22,
+                DAU: 99
             },
             moreValue: {},
             // disableGuides: true
