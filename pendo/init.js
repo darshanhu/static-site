@@ -12,14 +12,16 @@
 
         pendo.initialize({
             visitor: {
-                id: "SOFTLAND_ACCOUNT_DARSHAN",
+                // id: "SOFTLAND_ACCOUNT_DARSHAN",
+                id: "",
                 email:        "",
                 full_name:    "Darshan Hulswar",
                 typeTesting: 99
             },
 
             account: {
-                id:           'SOFTLAND_ACCOUNT_1',
+                // id:           'SOFTLAND_ACCOUNT_1',
+                id: "",
                 name:         "SOFTLAND_ACCOUNT",
                 // creationDate: new Date().toISOString().slice(0, 10)
                 creationDate: 22,
