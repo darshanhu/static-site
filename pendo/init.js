@@ -12,8 +12,8 @@
 
         pendo.initialize({
             visitor: {
-                // id: "SOFTLAND_ACCOUNT_DARSHAN_new_User",
-                id: "",
+                id: "SOFTLAND_ACCOUNT_DARSHAN_new_User",
+                // id: "",
                 email:        "",
                 full_name:    "Darshan Hulswar",
                 typeTesting: 99,
