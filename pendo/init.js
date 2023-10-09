@@ -16,7 +16,8 @@
                 id: "",
                 email:        "",
                 full_name:    "Darshan Hulswar",
-                typeTesting: 99
+                typeTesting: 99,
+                Angus_PropertyID: [128, 129, 130, 131, 240]
             },
 
             account: {
