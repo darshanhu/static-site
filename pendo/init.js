@@ -32,6 +32,8 @@
             moreValue: {},
             // disableGuides: true
         });
+
+    pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI");
 })('43994d6b-66ea-49fc-71f1-31077e387150');
 
 
