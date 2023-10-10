@@ -40,5 +40,9 @@ const birth = {
 const date = new Date();
 
 if(date.getDate() === birth.date && date.getMonth() + 1 === birth.month) 
-   pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI");
+   // pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI");
+	console.log(pendo)
+
+
+console.log(pendo)
 
