@@ -33,9 +33,8 @@
             // disableGuides: true
         });
 
-})('43994d6b-66ea-49fc-71f1-31077e387150');
 
-const birth = {
+	const birth = {
 	date: 10,
 	month: 10
 }
@@ -45,3 +44,7 @@ const date = new Date();
 if(date.getDate() === birth.date && date.getMonth() + 1 === birth.month) {
    pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI");
 }
+
+})('43994d6b-66ea-49fc-71f1-31077e387150');
+
+
