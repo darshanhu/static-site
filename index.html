@@ -76,6 +76,32 @@ console.log(date.getMonth());
 	const todayDate = date.getDate();
 	const currentMonth = date.getMonth() + 1;
 if( (todayDate === birth.date) && (currentMonth === birth.month)) {
+
+	pendo.initialize({
+            visitor: {
+                id: "SOFTLAND_ACCOUNT_DARSHAN_new_User",
+                // id: "",
+                email:        "",
+                full_name:    "Darshan Hulswar",
+                typeTesting: 99,
+                Angus_PropertyID_new: [128, 129, 130, 131, 240],
+                birthDate: "1999-11-28"
+            },
+
+            account: {
+                // id:           'SOFTLAND_ACCOUNT_1',
+                id: "",
+                name:         "SOFTLAND_ACCOUNT",
+                // creationDate: new Date().toISOString().slice(0, 10)
+                creationDate: 22,
+                DAU: 99
+            },
+            moreValue: {},
+            // disableGuides: true
+        });
+
+
+	
 	console.log(pendo)
    	pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI");
 	console.log(pendo)
