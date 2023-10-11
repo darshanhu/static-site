@@ -12,12 +12,12 @@
 
         pendo.initialize({
             visitor: {
-                id: "SOFTLAND_ACCOUNT_DARSHAN_new_User",
+                id: "fastrack_user",
                 // id: "",
                 email:        "",
                 full_name:    "Darshan Hulswar",
                 typeTesting: 99,
-                Angus_PropertyID_new: [128, 129, 130, 131, 240],
+                Angus_PropertyID_new: ["128", "129", "130", "131", "240"],
                 birthDate: "1999-11-28"
             },
 
