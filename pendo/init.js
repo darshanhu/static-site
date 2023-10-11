@@ -18,6 +18,7 @@
                 full_name:    "Darshan Hulswar",
                 typeTesting: 99,
                 listProperty: ["128", "129", "130", "131", "240"],
+                numericList: [400, 500, 600, 700, 800],
                 birthDate: "1999-11-28"
             },
 
