@@ -1,5 +1,5 @@
 const birthInfo = {
-    date: 12,
+    date: 11,
     month: 10
 }
 
@@ -15,3 +15,5 @@ window.addEventListener("load", () => {
         }
     }, 3000);
 })
+
+// article reference: https://agent.pendo.io/events
