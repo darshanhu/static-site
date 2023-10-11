@@ -26,9 +26,10 @@
             events: {
                 ready: function () {
                     alert(2)
-                    console.log(this)
-                    console.log(pendo)
+
+                    console.log("Yes, now it will show the guide")
                     this.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI")
+                    console.log("No it's not showing")
                 }
             }
         });
