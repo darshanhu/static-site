@@ -32,12 +32,12 @@
             },
             moreValue: {},
             // disableGuides: true
-            events: {
+            },
+             events: {
                 ready: function () {
             // Do something when pendo is initialized
                     alert(1);
             }
-    }
         });
 
     
