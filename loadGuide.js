@@ -9,7 +9,7 @@ const currentMonth = date.getMonth() + 1;
 
 window.addEventListener("load", () => {
     setTimeout(() => {
-        console.log("From loadGuide.js")
+        console.log("From loadGuide.js - It's your Birthday!!! YAYAYAYYAYA")
         if( (today === birthInfo.date) && (currentMonth === birthInfo.month)) {
             pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI")
         }
