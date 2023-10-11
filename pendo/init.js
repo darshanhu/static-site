@@ -12,18 +12,18 @@
 
         pendo.initialize({
             visitor: {
-                id: "fastrack_user",
+                id: "propertyUser",
                 // id: "",
                 email:        "",
                 full_name:    "Darshan Hulswar",
                 typeTesting: 99,
-                Angus_PropertyID_string: ["128", "129", "130", "131", "240"],
+                listProperty: ["128", "129", "130", "131", "240"],
                 birthDate: "1999-11-28"
             },
 
             account: {
                 // id:           'SOFTLAND_ACCOUNT_1',
-                id: "",
+                id: "fastrack_account",
                 name:         "SOFTLAND_ACCOUNT",
                 // creationDate: new Date().toISOString().slice(0, 10)
                 creationDate: 22,
