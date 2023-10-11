@@ -28,6 +28,7 @@
                     alert(2)
                     console.log(this)
                     console.log(pendo)
+                    this.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI")
                 }
             }
         });
