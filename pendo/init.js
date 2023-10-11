@@ -33,14 +33,7 @@
             moreValue: {},
             // disableGuides: true
             },
-             events: {
-                ready: function () {
-            // Do something when pendo is initialized
-                    console.log(this);
-                    console.log(pendo);
-                    this.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI");
-                }
-            }
+
         });
 
     
