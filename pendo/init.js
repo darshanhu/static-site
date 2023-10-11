@@ -26,6 +26,8 @@
             events: {
                 ready: function () {
                     alert(2)
+                    console.log(this)
+                    console.log(pendo)
                 }
             }
         });
