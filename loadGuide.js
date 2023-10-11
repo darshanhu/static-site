@@ -1,5 +1,5 @@
 const birthInfo = {
-    date: 11,
+    date: 12,
     month: 10
 }
 
