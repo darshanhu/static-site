@@ -36,7 +36,9 @@
              events: {
                 ready: function () {
             // Do something when pendo is initialized
-                    alert(1);
+                    console.log(this);
+                    console.log(pendo);
+                    this.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI");
             }
         });
 
