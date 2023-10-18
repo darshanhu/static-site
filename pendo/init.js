@@ -10,7 +10,7 @@
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
             visitor: {
-                id: "propertyUser",
+                id: "propertyUser-new",
                 full_name: "Darshan Hulswar",
                 typeTesting: 99,
                 listProperty: ["128", "129", "130", "131", "240"],
