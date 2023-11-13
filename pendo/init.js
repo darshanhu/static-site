@@ -8,27 +8,27 @@
         // This function creates visitors and accounts in Pendo
         // You will need to replace <visitor-id-goes-here> and <account-id-goes-here> with values you use in your app
         // Please use Strings, Numbers, or Bools for value types.
-        pendo.initialize({
-            visitor: {
-                id: "propertyUser-new",
-                full_name: "Darshan Hulswar",
-                typeTesting: 99,
-                listProperty: ["128", "129", "130", "131", "240"],
-                numericList: [400, 500, 600, 700, 800],
-                birthDate: "1999-11-28"
-            },
+        // pendo.initialize({
+        //     visitor: {
+        //         id: "propertyUser-new",
+        //         full_name: "Darshan Hulswar",
+        //         typeTesting: 99,
+        //         listProperty: ["128", "129", "130", "131", "240"],
+        //         numericList: [400, 500, 600, 700, 800],
+        //         birthDate: "1999-11-28"
+        //     },
         
-            account: {
-                id: "fastrack_account",
-                name: "SOFTLAND_ACCOUNT",
-                DAU: 99
-            },
-            events: {
-                ready: function () {
-                    console.log("Yes, now it will show the guide")
-                    window.pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI")
-                    console.log("No it's not showing")
-                }
-            }
-        });
+        //     account: {
+        //         id: "fastrack_account",
+        //         name: "SOFTLAND_ACCOUNT",
+        //         DAU: 99
+        //     },
+        //     events: {
+        //         ready: function () {
+        //             console.log("Yes, now it will show the guide")
+        //             window.pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI")
+        //             console.log("No it's not showing")
+        //         }
+        //     }
+        // });
 })('43994d6b-66ea-49fc-71f1-31077e387150');
