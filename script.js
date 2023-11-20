@@ -36,10 +36,10 @@ $('#exampleModal').on('shown.bs.modal', function () {
 window.addEventListener('resize', function(event) {
 
   if(window.innerWidth >= 1311 ) {
-    pendo.launchGuideById("tVYYILHD6bVvCa-4TZOf9sICX7g");
+    pendo.showGuideById("tVYYILHD6bVvCa-4TZOf9sICX7g");
     console.log("SCreen size changed")
   }
-  
+
 }, true);
 
 
