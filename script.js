@@ -33,6 +33,7 @@ $('#exampleModal').on('shown.bs.modal', function () {
 
 if(window.innerWidth >= 1311 ) {
   pendo.launchGuideById("tVYYILHD6bVvCa-4TZOf9sICX7g");
+  console.log("SCreen size changed")
 }
 
 
