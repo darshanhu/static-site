@@ -31,6 +31,9 @@ $('#exampleModal').on('shown.bs.modal', function () {
   // $('#myInput').trigger('focus')
 })
 
+if(window.innerWidth >= 1311 ) {
+  pendo.launchGuideById("tVYYILHD6bVvCa-4TZOf9sICX7g");
+}
 
 
 
