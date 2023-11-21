@@ -49,7 +49,7 @@ let flag = true;
 setInterval(function(){ 
   //code goes here that will be run every 1 seconds.   
   console.log(time)
-  time++;
+
   if(flag) {
     btn.style.display = "none";
     flag = false;
