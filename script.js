@@ -42,5 +42,24 @@ window.addEventListener('resize', function(event) {
 
 }, true);
 
+const btn = document.getElementById("chameleon-btn");
+
+let flag = true;
+
+setInterval(function(){ 
+  //code goes here that will be run every 1 seconds.   
+  console.log(time)
+  time++;
+  if(flag) {
+    btn.style.display = "none";
+    flag = false;
+    console.log("Button is visible")
+  } else {
+    btn.style.display = "block";
+    flag = true;
+    console.log("Button is hidden")
+  }
+}, 10000);
+
 
 
