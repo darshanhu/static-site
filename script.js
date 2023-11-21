@@ -52,11 +52,11 @@ setInterval(function(){
   if(flag) {
     btn.style.display = "none";
     flag = false;
-    console.log("Button is visible")
+    console.log("Button is hidden")
   } else {
     btn.style.display = "block";
     flag = true;
-    console.log("Button is hidden")
+    console.log("Button is visible")
   }
 }, 10000);
 
