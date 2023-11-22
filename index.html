@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/7.0.2/default/default-main.css" />
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="https://kendo.cdn.telerik.com/2023.3.1114/js/kendo.all.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -260,6 +265,19 @@
     <div class="container" style="margin-top: 90px;">
       <button class="btn btn-primary my-4" id="chameleon-btn">Chameleon Button</button>
     </div>
+
+    <input id="ddl" />
+
+    <script>
+      $("#ddl").kendoDropDownList({
+        dataTextField: "text",
+        dataValueField: "value",
+        dataSource: [
+          { text: "Item1", value: "1" },
+          { text: "Item2", value: "2" }
+        ]
+      });
+    </script>   
 
 
     <script
