@@ -30,3 +30,35 @@ function toggle() {
 $('#exampleModal').on('shown.bs.modal', function () {
   // $('#myInput').trigger('focus')
 })
+
+
+
+window.addEventListener('resize', function(event) {
+
+  if(window.innerWidth >= 1311 ) {
+    pendo.showGuideById("tVYYILHD6bVvCa-4TZOf9sICX7g");
+    console.log("SCreen size changed")
+  }
+
+}, true);
+
+const btn = document.getElementById("chameleon-btn");
+
+let flag = true;
+
+setInterval(function(){ 
+  //code goes here that will be run every 1 seconds.   
+ 
+  if(flag) {
+    btn.style.display = "none";
+    flag = false;
+    console.log("Button is hidden")
+  } else {
+    btn.style.display = "block";
+    flag = true;
+    console.log("Button is visible")
+  }
+}, 10000);
+
+
+
