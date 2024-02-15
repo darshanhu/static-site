@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
+  <head>
+    <meta charset="utf-8" />
     <title>Kendo UI Snippet</title>
 
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/7.0.2/default/default-ocean-blue.css"/>
+    <link
+      rel="stylesheet"
+      href="https://kendo.cdn.telerik.com/themes/7.0.2/default/default-ocean-blue.css"
+    />
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2023.3.1114/js/kendo.all.min.js"></script>
-</head>
-<body>
-  
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
         <title>Kendo UI using CDN</title>
 
-        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/7.0.2/default/default-main.css" />
+        <link
+          rel="stylesheet"
+          href="https://kendo.cdn.telerik.com/themes/7.0.2/default/default-main.css"
+        />
 
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
         <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
         <script src="https://kendo.cdn.telerik.com/2023.3.1114/js/kendo.all.min.js"></script>
-    </head>
-    <body>
-      <input id="ddl" />
-      <script>
-        $("#ddl").kendoDropDownList({
-          dataTextField: "text",
-          dataValueField: "value",
-          dataSource: [
-            { text: "Item1", value: "1" },
-            { text: "Item2", value: "2" }
-          ]
-        });
-      </script>   
-    </body>
 
-    <script src="./pendo/init.js"></script>
-</html>
-</body>
+        <style>
+          input[type="checkbox"] {
+            position: relative;
+            width: 80px;
+            height: 40px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: red;
+            outline: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+          }
+
+          input[type="checkbox"]::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+          }
+
+          input[type="checkbox"]:checked::before {
+            transform: translateX(100%);
+            background: #fff;
+          }
+
+          input[type="checkbox"]:checked {
+            background: #00ed64;
+          }
+        </style>
+      </head>
+      <body>
+        <input type="checkbox" />
+      </body>
+
+      <script src="./pendo/init.js"></script>
+    </html>
+  </body>
 </html>
