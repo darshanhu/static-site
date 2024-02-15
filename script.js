@@ -1,30 +1,30 @@
-let active = false;
+// let active = false;
 
-function toggle() {
-  let toggle = document.querySelector(".toggle");
-  let text = document.querySelector(".text");
-  active = !active;
-  if (active) {
-    toggle.classList.add("active");
-    text.innerHTML = "ON";
+// function toggle() {
+//   let toggle = document.querySelector(".toggle");
+//   let text = document.querySelector(".text");
+//   active = !active;
+//   if (active) {
+//     toggle.classList.add("active");
+//     text.innerHTML = "ON";
 
-    pendo.track("TOGGLE_STATUS", {
-      toggleState: "ON"
-    });
+//     pendo.track("TOGGLE_STATUS", {
+//       toggleState: "ON"
+//     });
 
-    console.log("Pendo Track Event Called with status 'ON'")
+//     console.log("Pendo Track Event Called with status 'ON'")
     
-  } else {
-    toggle.classList.remove("active");
-    text.innerHTML = "OFF";
+//   } else {
+//     toggle.classList.remove("active");
+//     text.innerHTML = "OFF";
 
-     pendo.track("TOGGLE_STATUS", {
-      toggleState: "OFF"
-    });
+//      pendo.track("TOGGLE_STATUS", {
+//       toggleState: "OFF"
+//     });
 
-    console.log("Pendo Track Event Called with status 'OFF'")
-  }
-}
+//     console.log("Pendo Track Event Called with status 'OFF'")
+//   }
+// }
 
 
 $('#exampleModal').on('shown.bs.modal', function () {
@@ -61,4 +61,20 @@ setInterval(function(){
 }, 10000);
 
 
+let active = false;
+function toggle() {
+  let toggle = document.querySelector(".toggle");
+  let text = document.querySelector(".text");
+  active = !active;
+  if (active) {
+    toggle.classList.add("active");
+    text.innerHTML = "ON";
+  } else {
+    toggle.classList.remove("active");
+    text.innerHTML = "OFF";
+    // pendo.showGuideById("-mtspQ2sgo7cme2JXPUu3yQS9Rc");
+    pendo.showGuideById("AaVWynR_3siL_EGzeJvJngwb1RM");
+    console.log("Guide triggered");
+  }
+}
 
