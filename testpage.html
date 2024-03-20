@@ -60,9 +60,11 @@
         if ($(window).width() < 768) { // Adjust the screen width threshold as needed
             // Disable button for mobile
             $('#btn1').prop('disabled', true);
+            $('#btn1').addClass('disabled-button');
         } else {
             // Enable button for web
             $('#btn1').prop('disabled', false);
+            $('#btn1').removeClass('disabled-button');
         }
     }
 
