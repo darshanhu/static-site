@@ -1,127 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Kendo UI Snippet</title>
-
-    <link
-      rel="stylesheet"
-      href="https://kendo.cdn.telerik.com/themes/7.0.2/default/default-ocean-blue.css"
-    />
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2023.3.1114/js/kendo.all.min.js"></script>
-  </head>
-  <body>
-    <!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="utf-8" />
-        <title>Kendo UI using CDN</title>
-
-        <link
-          rel="stylesheet"
-          href="https://kendo.cdn.telerik.com/themes/7.0.2/default/default-main.css"
-        />
-
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-        <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
-        <script src="https://kendo.cdn.telerik.com/2023.3.1114/js/kendo.all.min.js"></script>
-
+        <title>Response CSS selector</title>
         <style>
-          input[type="checkbox"] {
-            position: relative;
-            width: 80px;
-            height: 40px;
-            -webkit-appearance: none;
-            appearance: none;
-            background: red;
-            outline: none;
-            border-radius: 2rem;
-            cursor: pointer;
-            box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
-          }
 
-          input[type="checkbox"]::before {
-            content: "";
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #fff;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: 0.5s;
-          }
+          
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
-          input[type="checkbox"]:checked::before {
-            transform: translateX(100%);
-            background: #fff;
-          }
-
-          input[type="checkbox"]:checked {
-            background: #00ed64;
-          }
-
-          .text {
-            font-size: 23px;
-            color: #494949;
-          }
-
-          .toggle {
-            position: relative;
-            width: 40px;
-            height: 20px;
-            border: 2px solid #494949;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-
-          .circle {
-            position: absolute;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            border-radius: 20px;
-            background-color: #494949;
-            transition: 0.3s;
-          }
-
-          .active {
-            border-color: rgb(85, 227, 180);
-          }
-
-          .active + .text {
-            color: rgb(85, 227, 180);
-          }
-
-          .active .circle {
-            left: 100%;
-            transform: translateX(-100%);
-            transition: 0.3s;
-            background-color: rgb(85, 227, 180);
-          }
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
         </style>
+
       </head>
       <body>
-        <input type="checkbox" />
+        <!-- HTML !-->
+<button class="button-1" id="btn1" role="button">Button 1</button>
 
-        <section class="new">
-          <div class="container">
-            <div class="toggle" onclick="toggle()">
-              <div class="circle"></div>
-            </div>
-            <span class="text">FF</span>
-          </div>
-        </section>
       </body>
-
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
       <script src="./pendo/init.js"></script>
-      <script src="./script.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+    // Function to check screen size and enable/disable button
+    function checkScreenSize() {
+        if ($(window).width() < 768) { // Adjust the screen width threshold as needed
+            // Disable button for mobile
+            $('#btn1').prop('disabled', true);
+        } else {
+            // Enable button for web
+            $('#btn1').prop('disabled', false);
+        }
+    }
+
+    // Initial check on document ready
+    checkScreenSize();
+
+    // Check screen size on resize
+    $(window).resize(function(){
+        checkScreenSize();
+    });
+});
+      </script>
     </html>
   </body>
 </html>
