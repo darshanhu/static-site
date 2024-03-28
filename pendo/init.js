@@ -17,7 +17,8 @@
                 numericList: [400, 500, 600, 700, 800],
                 birthDate: "1999-11-28",
                 uniqueClientId: 99294858,
-                typeTesting: true
+                typeTesting: true,
+                serverUrl: "https://static-toggle.netlify.app/"
             },
         
             account: {
