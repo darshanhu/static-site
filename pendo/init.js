@@ -18,7 +18,9 @@
                 birthDate: "1999-11-28",
                 uniqueClientId: 99294858,
                 typeTesting: true,
-                serverUrl: "https://static-toggle.netlify.app/"
+                serverUrl: "https://static-toggle.netlify.app/",
+                rw_sw_url: "https://static-toggle.netlify.app/"
+                
             },
         
             account: {
