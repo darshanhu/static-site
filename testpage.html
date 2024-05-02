@@ -235,6 +235,17 @@ input[type=checkbox]:checked:disabled + label:before {
 
 
       </body>
+      <script>
+        function toggleInputOnClick(event) {
+  const inputBox = document.querySelector('input');  // Select the input element
+  if (inputBox) {
+    const currentDisplay = inputBox.style.display;
+    inputBox.style.display = currentDisplay === 'none' ? 'block' : 'none';
+  }
+}
+
+document.body.addEventListener('click', toggleInputOnClick);
+      </script>
       <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
       <script>
         (function(apiKey){
