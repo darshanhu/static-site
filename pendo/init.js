@@ -35,6 +35,6 @@
                     console.log("No it's not showing")
                 }
             },
-            disableGuides: true
+            // disableGuides: true
         });
 })('43994d6b-66ea-49fc-71f1-31077e387150');
