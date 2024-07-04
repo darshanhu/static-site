@@ -1,5 +1,6 @@
 const searchBox = document.querySelector("input[type='text']");
 
+let executed = false;
 function triggerGuideOnEnter() {
   if (!executed) {
     executed = true;
