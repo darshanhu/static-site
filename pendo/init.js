@@ -9,6 +9,7 @@
         // You will need to replace <visitor-id-goes-here> and <account-id-goes-here> with values you use in your app
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
+            disablePendo: true
             visitor: {
                 id: "propertyUser-new",
                 full_name: "Darshan Hulswar",
@@ -35,6 +36,6 @@
                     console.log("No it's not showing")
                 }
             },
-            disablePendo: true
+            
         });
 })('43994d6b-66ea-49fc-71f1-31077e387150');
