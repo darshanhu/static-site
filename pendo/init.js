@@ -29,7 +29,7 @@
             account: {
                 id: "fastrack_account",
                 name: "SOFTLAND_ACCOUNT",
-                DAU: 99
+                DAU: 99,
                 monthly_value: 20000,
                 is_paying: true,
                 tags: ["enterprise"]
