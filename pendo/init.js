@@ -12,7 +12,9 @@
             // disablePendo: true
             visitor: {
                 id: "propertyUser-new",
+                email: "propertyUser-new@mail.com"
                 full_name: "Darshan Hulswar",
+                tags: ["Product Manager"],
                 pendoId: 99,
                 listProperty: ["128", "129", "130", "131", "240"],
                 numericList: [400, 500, 600, 700, 800],
@@ -28,6 +30,9 @@
                 id: "fastrack_account",
                 name: "SOFTLAND_ACCOUNT",
                 DAU: 99
+                monthly_value: 20000,
+                is_paying: true,
+                tags: ["enterprise"]
             },
             events: {
                 ready: function () {
