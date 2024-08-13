@@ -31,9 +31,13 @@ const productCardsHtml = products.map(product => {
             <p class="card-text">${product.description}</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="price">
-                <span class="original-price">$${product.price.toFixed(2)}</span>
+                <span class="original-price text-muted mr-3">
+                <s>
+                $${product.price.toFixed(2)}
+                </s>
+                </span>
                 ${product.discountPercentage > 0 ? 
-                  `<span class="discounted-price">$${(product.price * (1 - product.discountPercentage / 100)).toFixed(2)}</span>` 
+                  `<span class="discounted-price font-weight-bold text-primary">$${(product.price * (1 - product.discountPercentage / 100)).toFixed(2)}</span>` 
                   : ''
                 }
               </div>
