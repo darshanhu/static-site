@@ -23,7 +23,8 @@
                 typeTesting: true,
                 serverUrl: "https://static-toggle.netlify.app/",
                 rw_sw_url: "https://static-toggle.netlify.app/",
-                subscriptionRenewDate: "2024-07-14" ,   
+                subscriptionRenewDate: "2024-07-14" , 
+                MRR: 499.87  
             },
         
             account: {
