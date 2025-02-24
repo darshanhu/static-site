@@ -13,6 +13,7 @@
             visitor: {
                 id: "propertyUser-new",
                 email: "propertyUser-new@mail.com",
+                $email: "darshanwithdollarsign@mail.com"
                 full_name: "Darshan Hulswar",
                 tags: ["Product Manager"],
                 pendoId: 99,
