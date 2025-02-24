@@ -24,7 +24,8 @@
                 serverUrl: "https://static-toggle.netlify.app/",
                 rw_sw_url: "https://static-toggle.netlify.app/",
                 subscriptionRenewDate: "2024-07-14" , 
-                MRR: 499.87  
+                MRR: 499.87,
+                architecture: "DEEP SEEK"
             },
         
             account: {
@@ -33,7 +34,8 @@
                 DAU: 99,
                 monthly_value: 20000,
                 is_paying: true,
-                tags: ["enterprise"]
+                tags: ["enterprise"],
+                prem: "Premium User"
             },
             events: {
                 ready: function () {
