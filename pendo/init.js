@@ -9,7 +9,7 @@
         // You will need to replace <visitor-id-goes-here> and <account-id-goes-here> with values you use in your app
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
-            // disablePendo: true
+            disablePendo: true,
             visitor: {
                 id: "propertyUser-new",
                 email: "propertyUser-new@mail.com",
