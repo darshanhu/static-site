@@ -1,0 +1,63 @@
+{
+          "name": "per-week-chart",
+          "pipeline": [
+            {
+              "source": {
+                "events": {
+                  "appId": [
+                    "expandAppIds(\"*\")"
+                  ]
+                },
+                "timeSeries": {
+                  "first": 1717992000000,
+                  "count": 24,
+                  "period": "hourly"
+                }
+              }
+            },
+            {
+              "identified": "visitorId"
+            },
+            {
+              "fork": [
+                [
+                  {
+                    "group": {
+                      "group": [
+                        "appId"
+                      ],
+                      "fields": [
+                        {
+                          "selected": {
+                            "sum": "numEvents"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                [
+                  {
+                    "reduce": {
+                      "selected": {
+                        "sum": "numEvents"
+                      }
+                    }
+                  },
+                  {
+                    "eval": {
+                      "appId": "\"total\""
+                    }
+                  }
+                ]
+              ]
+            }
+          ],
+          "productArea": "Analytics",
+          "subProductArea": "Shared",
+          "settings": {
+            "excludelist": "apply"
+          },
+          "streamId": "969dd46b-b94d-4236-8a77-5ac9dfe1139e",
+          "requestId": "per-week-chart-rId-9b6774c7-10c1-4038-b21a-a7daff497bb7"
+        }
