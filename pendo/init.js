@@ -26,10 +26,12 @@
   // Please use Strings, Numbers, or Bools for value types.
   pendo.initialize({
     visitor: {
-      id: "propertyUser-new",
+      customLanguage: "hi",
+      id: "open-user",
       email: "propertyUser-new@mail.com",
       full_name: "Darshan Hulswar",
       tags: ["Product Manager"],
+      functionZone: "Phoenix's Build",
       pendoId: 99,
       listProperty: ["128", "129", "130", "131", "240"],
       numericList: [400, 500, 600, 700, 800],
@@ -51,18 +53,14 @@
       is_paying: true,
       tags: ["enterprise"],
       prem: "Premium User",
-    },
-    guides: {
-      delay: true,
-      //   disabled: true,
-      timeout: 50000,
-    },
-    events: {
-      ready: function () {
-        console.log("Yes, now it will show the guide");
-        window.pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI");
-        console.log("No it's not showing");
-      },
+      planLevel: "enterprise",
     },
   });
 })("43994d6b-66ea-49fc-71f1-31077e387150");
+
+pendo.track("OPEN_TRACK_EVENT", {
+  plan: "Pro Annual",
+  accountType: "Facebook",
+  width: JSON.stringify(window.innerWidth),
+  height: JSON.stringify(window.innerHeight),
+});
