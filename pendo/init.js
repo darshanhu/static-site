@@ -1,4 +1,4 @@
-var pen = (function (apiKey) {
+(function (apiKey) {
   (function (p, e, n, d, o) {
     var v, w, x, y, z;
     o = p[d] = p[d] || {};
