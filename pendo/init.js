@@ -24,7 +24,7 @@
   // This function creates visitors and accounts in Pendo
   // You will need to replace <visitor-id-goes-here> and <account-id-goes-here> with values you use in your app
   // Please use Strings, Numbers, or Bools for value types.
-  /*
+ 
   pendo.initialize({
     visitor: {
       customLanguage: "hi",
@@ -65,5 +65,3 @@ pendo.track("OPEN_TRACK_EVENT", {
   width: JSON.stringify(window.innerWidth),
   height: JSON.stringify(window.innerHeight),
 });
-
-  */
