@@ -27,7 +27,7 @@
  
   pendo.initialize({
     guides: {
-        disabled: true,
+        disabled: false,
     },
     visitor: {
       customLanguage: "hi",
