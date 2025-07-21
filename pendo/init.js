@@ -26,6 +26,9 @@
   // Please use Strings, Numbers, or Bools for value types.
  
   pendo.initialize({
+    guides: {
+        disabled: true,
+    },
     visitor: {
       customLanguage: "hi",
       id: "open-user",
