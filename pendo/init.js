@@ -24,10 +24,19 @@
   // This function creates visitors and accounts in Pendo
   // You will need to replace <visitor-id-goes-here> and <account-id-goes-here> with values you use in your app
   // Please use Strings, Numbers, or Bools for value types.
- 
+
   pendo.initialize({
     guides: {
-        disabled: false,
+      delay: false,
+      disabled: false,
+      globalScripts: [
+        {
+          script: function (step, guide) {
+            console.log('Step ', step.id, ' has run');
+          }
+        }
+      ],
+      timeout: 30000
     },
     visitor: {
       customLanguage: "hi",
