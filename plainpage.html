@@ -4,7 +4,7 @@
 <head>
     <meta charset="ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Inspire - Admin and Dashboard Template</title>
+    <title>Pendo Support</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -519,9 +519,15 @@
                 <div class="main-content">
                     <div class="container-fluid">
                         <div id="container-pendo-guide">Container</div>
+                        <div data-target-id="IconButton-resourceCenterHelpMenu">RC Button</div>
                     </div>
 
 
+                    <h1 data-content="pendo-guide-anchor-section-1">First Content</h1>
+                    <h1 data-content="pendo-guide-anchor-section-2">Second Content</h1>
+                    <h1 data-content="pendo-guide-anchor-section-3">Much More</h1>
+                    <h1 data-content="pendo-guide-anchor-section-4">Yes her again!</h1>
+                    <h1 data-content="pendo-guide-anchor-section-5">Yes her again!</h1>
                 </div>
             </div>
             <!-- Content Wrapper END -->
@@ -539,8 +545,70 @@
     <!-- End Preloader -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./pendo/init.js"></script>
-    <script src="./script.js"></script>
+    <!-- <script src="./pendo/init.js"></script> -->
+
+    <script>
+        (function (apiKey) {
+            (function (p, e, n, d, o) {
+                var v, w, x, y, z;
+                o = p[d] = p[d] || {};
+                o._q = o._q || [];
+                v = ["initialize", "identify", "updateOptions", "pageLoad", "track"];
+                for (w = 0, x = v.length; w < x; ++w)
+                    (function (m) {
+                        o[m] =
+                            o[m] ||
+                            function () {
+                                o._q[m === v[0] ? "unshift" : "push"](
+                                    [m].concat([].slice.call(arguments, 0))
+                                );
+                            };
+                    })(v[w]);
+                y = e.createElement(n);
+                y.async = !0;
+                y.src = "https://cdn.pendo.io/agent/static/" + apiKey + "/pendo.js";
+                z = e.getElementsByTagName(n)[0];
+                z.parentNode.insertBefore(y, z);
+            })(window, document, "script", "pendo");
+
+            // This function creates visitors and accounts in Pendo
+            // You will need to replace <visitor-id-goes-here> and <account-id-goes-here> with values you use in your app
+            // Please use Strings, Numbers, or Bools for value types.
+
+            pendo.initialize({
+                // guides: {
+                //     delay: false,
+                //     disabled: false,
+                //     globalScripts: [
+                //         {
+                //             script: function (step, guide) {
+                //                 console.log('Step ', step.id, ' has run');
+                //             }
+                //         }
+                //     ],
+                //     timeout: 30000
+                // },
+                visitor: {
+                    // customLanguage: "hi",
+                    id: "",
+                    email: "",
+                    // full_name: "Darshan Hulswar",
+                },
+
+                account: {
+                    id: "",
+                    name: "",
+                    // DAU: 99,
+                    // monthly_value: 20000,
+                    // is_paying: true,
+                    // tags: ["enterprise"],
+                    // prem: "Premium User",
+                    // planLevel: "enterprise",
+                },
+            });
+        })("43994d6b-66ea-49fc-71f1-31077e387150");
+    </script>
+    <!-- <script src="./script.js"></script> -->
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
