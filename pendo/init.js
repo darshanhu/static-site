@@ -89,3 +89,5 @@ pendo.track("OPEN_TRACK_EVENT", {
     analytics.page();
   }
 }();
+
+analytics.identify("user_id", { email: "user@example.com", name: "John Doe" })
