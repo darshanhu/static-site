@@ -71,32 +71,7 @@
     </head>
 
     <body>
-        <div class="accordion-container">
-            <button test-controls="test" class="accordion">Section 1</button>
-            <div aria-controls="panel-1" class="panel">
-                <p>This is section 1 content. It will only show when the accordion is expanded.</p>
-            </div>
-
-            <button class="accordion active">Section 2</button>
-            <div aria-controls="panel-2" class="panel" style="display: block;">
-                <p>This is section 2 content. It will only show when the accordion is expanded.</p>
-            </div>
-
-            <button class="accordion">Section 3</button>
-            <div aria-controls="panel-3" class="panel">
-                <p>This is section 3 content. It will only show when the accordion is expanded.</p>
-            </div>
-        </div>
-
-        <div class="container">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-        </div>
-
+        <!-- Re-enable the buttons and add data-bs attributes to open the modal -->
         <section class="container p-4">
             <button id="inbox" type="button" class="btn btn-primary position-relative mx-4">
                 Inbox
@@ -105,7 +80,7 @@
                     <span class="visually-hidden">unread messages</span>
                 </span>
             </button>
-            <button id="pending" type="button" class="btn btn-primary position-relative mx-4">
+            <button id="pending" type="button" class="btn btn-primary position-relative mx-4" data-bs-toggle="modal" data-bs-target="#pendingModal">
                 Pending
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     12+
@@ -121,9 +96,35 @@
             </button>
         </section>
 
+        <!-- Bootstrap modal for Pending Invoices -->
+        <div class="modal fade" id="pendingModal" tabindex="-1" aria-labelledby="pendingModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="pendingModalLabel">Pending Invoices</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Replace with actual pending invoice content as needed -->
+                <p>Here are the pending invoices (example content).</p>
+                <ul>
+                  <li>Invoice #001 — $423.00 — Due 2025-11-01</li>
+                  <li>Invoice #002 — $1,120.50 — Due 2025-11-05</li>
+                  <li>Invoice #003 — $576.00 — Due 2025-11-13</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Mark as Reviewed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </body>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script>
         (function (apiKey) {
             (function (p, e, n, d, o) {
@@ -137,8 +138,7 @@
 
             pendo.initialize({
                 visitor: {
-                    // id: "phoenix",
-                    id: "testuserrrrrrr",
+                    id: "phoenix",
                     full_name: "Darshan Hulswar",
                     pendoId: 99,
                     listProperty: ["128", "129", "130", "131", "240"],
@@ -158,91 +158,9 @@
                     name: "SOFTLAND_ACCOUNT",
                     DAU: 99
                 },
-                events: {
-                    ready: function () {
-                        console.log("Yes, now it will show the guide")
-                        window.pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI")
-                        console.log("No it's not showing")
-                    }
-                },
             });
         })('43994d6b-66ea-49fc-71f1-31077e387150');
-
-        // d750978f-97d9-4746-4990-fb138a1d56a1
-
     </script>
-    <script>
-        document.querySelectorAll('.accordion').forEach(button => {
-            button.addEventListener('click', () => {
-                const panel = button.nextElementSibling;
-                button.classList.toggle('active');
-
-                // Close other open panels
-                document.querySelectorAll('.panel').forEach(otherPanel => {
-                    if (otherPanel !== panel) {
-                        otherPanel.style.display = 'none'; // Close the other panels
-                        otherPanel.previousElementSibling.classList.remove('active');
-                    }
-                });
-
-                // Toggle current panel
-                if (panel.style.display === 'block') {
-                    panel.style.display = 'none'; // Close panel if already open
-                } else {
-                    panel.style.display = 'block'; // Open panel if closed
-                }
-            });
-        });
-    </script>
-
-    <script>
-
-        (function () {
-            // Delay execution for 10 seconds following the completion of page load
-            const delayInMilliseconds = 10000;
-
-            const executeAfterDelay = () => {
-                // the below line checks for passed metadata: login_milestone using pendo.getSerializedMetadata() on visitor level and then checks for the condition if it matches then programatically trigger the guide using pendo.showGuideById("guideID")
-                pendo.getSerializedMetadata().visitor.login_milestone
-                let loginMieStone = pendo.getSerializedMetadata().visitor.login_milestone;
-
-                if (loginMieStone === 10) {
-                    pendo.showGuideById("-4P7n-IFWKFMXrawJCJW88j1S5A")
-                }
-            };
-
-            window.onload = () => {
-                try {
-                    setTimeout(executeAfterDelay, delayInMilliseconds);
-                } catch (error) {
-                    console.error('Error executing function after delay:', error);
-                }
-            };
-        })();
-
-        // Select the element
-        const element = document.getElementById('myElement');
-
-        // Function to toggle visibility
-        function toggleVisibility() {
-            element.style.display = element.style.display === 'block' ? 'none' : 'block';
-        }
-
-        toggleVisibility();
-        // Start a repeating process
-        setInterval(() => {
-            toggleVisibility();
-        }, 2000); // Toggle visibility every 10 seconds
-
-
-
-    </script>
-
-    <!-- Start of hyperionbasehelp Zendesk Widget script -->
-    <script id="ze-snippet"
-        src="https://static.zdassets.com/ekr/snippet.js?key=1e6413cc-1fe1-46a2-a7a8-5f2bd2af9929"> </script>
-    <!-- End of hyperionbasehelp Zendesk Widget script -->
-
 </html>
 </body>
 
