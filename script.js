@@ -39,7 +39,7 @@
 // })();
 
 const observer = new MutationObserver(() => {
-  const el = document.getElementById("pendo-text-ac3855f0");
+  const el = document.getElementById("pendo-text-213ee214");
   if (el) {
     el.remove();
   }
