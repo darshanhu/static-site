@@ -28,8 +28,9 @@
 
   pendo.initialize({
     guides: {
-      delay: false,
+      delay: true,
       disabled: false,
+      disableCookies: true,
       globalScripts: [
         {
           script: function (step, guide) {
@@ -41,7 +42,7 @@
     },
     visitor: {
       customLanguage: "",
-      id: "new-visitor",
+      id: "testt",
       email: "propertyUser-new@mail.com",
       full_name: "Darshan Hulswar",
       tags: ["Product Manager"],
@@ -57,18 +58,14 @@
       subscriptionRenewDate: "2024-07-14",
       MRR: 499.87,
       architecture: "DEEP SEEK",
+      configModel: "gpt-5.2",
+      tokenLimit: 100,
+      paginationLimit: 50
     },
 
     account: {
       id: "new-account",
-      name: {
-        "account": {
-          "id": "12345",
-          "name": "Acme Corp",
-          "plan": "Pro",
-          "active": true
-        }
-      },
+      name: 'new-account',
       DAU: 99,
       monthly_value: 20000,
       is_paying: true,
@@ -79,22 +76,12 @@
   });
 })("43994d6b-66ea-49fc-71f1-31077e387150");
 
-/*
+
 pendo.track("OPEN_TRACK_EVENT", {
   plan: "Pro Annual",
   accountType: "Facebook",
   width: JSON.stringify(window.innerWidth),
   height: JSON.stringify(window.innerHeight),
 });
-*/
 
 
-// !function () {
-//   var i = "analytics", analytics = window[i] = window[i] || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
-//     analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "screen", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware", "register"]; analytics.factory = function (e) { return function () { if (window[i].initialized) return window[i][e].apply(window[i], arguments); var n = Array.prototype.slice.call(arguments); if (["track", "screen", "alias", "group", "page", "identify"].indexOf(e) > -1) { var c = document.querySelector("link[rel='canonical']"); n.push({ __t: "bpc", c: c && c.getAttribute("href") || void 0, p: location.pathname, u: location.href, s: location.search, t: document.title, r: document.referrer }) } n.unshift(e); analytics.push(n); return analytics } }; for (var n = 0; n < analytics.methods.length; n++) { var key = analytics.methods[n]; analytics[key] = analytics.factory(key) } analytics.load = function (key, n) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.setAttribute("data-global-segment-analytics-key", i); t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var r = document.getElementsByTagName("script")[0]; r.parentNode.insertBefore(t, r); analytics._loadOptions = n }; analytics._writeKey = "AUrWndPhT0Ic1Pc9ifeTasMBvjDD9Q4X";; analytics.SNIPPET_VERSION = "5.2.0";
-//     analytics.load("AUrWndPhT0Ic1Pc9ifeTasMBvjDD9Q4X");
-//     analytics.page();
-//   }
-// }();
-
-// analytics.identify("darshan.hulswar@pendo.io", { email: "darshan.hulswar@pendo.io", name: "John Doe", groupId: "test" })
