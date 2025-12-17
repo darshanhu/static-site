@@ -41,9 +41,8 @@
       timeout: 30000
     },
     visitor: {
-      customLanguage: "",
-      id: "testt",
-      email: "propertyUser-new@mail.com",
+      id: "darshan.hulswar@inspire.com",
+      email: "darshan.hulswar@inspire.com",
       full_name: "Darshan Hulswar",
       tags: ["Product Manager"],
       functionZone: "Phoenix's Build",
@@ -64,8 +63,8 @@
     },
 
     account: {
-      id: "new-account",
-      name: 'new-account',
+      id: "inspire_account_darshan",
+      name: 'inspire_account_darshan',
       DAU: 99,
       monthly_value: 20000,
       is_paying: true,
