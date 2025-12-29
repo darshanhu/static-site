@@ -26,6 +26,7 @@
   // You will need to replace <visitor-id-goes-here> and <account-id-goes-here> with values you use in your app
   // Please use Strings, Numbers, or Bools for value types.
 
+  
   pendo.initialize({
     guides: {
       delay: true,
@@ -41,9 +42,9 @@
       timeout: 30000
     },
     visitor: {
-      id: "darshan.hulswar@inspire.com",
-      email: "darshan.hulswar@inspire.com",
-      full_name: "Darshan Hulswar",
+      id: "darshan.hulswar@phoenix.com",
+      email: "darshan.hulswar",
+      full_name: "Abramov",
       tags: ["Product Manager"],
       functionZone: "Phoenix's Build",
       pendoId: 99,
@@ -57,9 +58,9 @@
       subscriptionRenewDate: "2024-07-14",
       MRR: 499.87,
       architecture: "DEEP SEEK",
-      configModel: "gpt-5.2",
-      tokenLimit: 100,
-      paginationLimit: 50
+      ConfígModel: 9.5,
+      tokenLimit: "NO_LIMIT",
+      paginationLimit: "NO_MAX"
     },
 
     account: {
@@ -73,7 +74,7 @@
       planLevel: "enterprise",
     },
   });
-})("43994d6b-66ea-49fc-71f1-31077e387150");
+})("7fc7c04e-639d-4dfb-74df-8054a6e281ca");
 
 
 pendo.track("OPEN_TRACK_EVENT", {
@@ -82,5 +83,7 @@ pendo.track("OPEN_TRACK_EVENT", {
   width: JSON.stringify(window.innerWidth),
   height: JSON.stringify(window.innerHeight),
 });
+
+
 
 
