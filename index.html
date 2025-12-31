@@ -1091,28 +1091,32 @@
     </div>
     <!-- End Preloader -->
 
-<script>
-  (function(h,o,u,n,d) {
-    h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
-    d=o.createElement(u);d.async=1;d.src=n
-    n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
-  })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js','DD_RUM')
-  window.DD_RUM.onReady(function() {
-    window.DD_RUM.init({
-      clientToken: 'pub80789050c80990d203f1ae8465d22f12',
-      applicationId: '50ac7706-965e-455c-b9c9-3b84d608f5f1',
-      site: 'datadoghq.com',
-      service: 'demo-app',
-      env: 'prod',
-      // Specify a version number to identify the deployed version of your application in Datadog
-      // version: '1.0.0',
-      sessionSampleRate: 100,
-      sessionReplaySampleRate: 20,
-      trackBfcacheViews: true,
-      defaultPrivacyLevel: 'mask-user-input',
-    });
-  })
-</script>
+    <script>
+        (function (h, o, u, n, d) {
+            h = h[d] = h[d] || { q: [], onReady: function (c) { h.q.push(c) } }
+            d = o.createElement(u); d.async = 1; d.src = n
+            n = o.getElementsByTagName(u)[0]; n.parentNode.insertBefore(d, n)
+        })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js', 'DD_RUM')
+        window.DD_RUM.onReady(function () {
+            window.DD_RUM.init({
+                clientToken: 'pub80789050c80990d203f1ae8465d22f12',
+                applicationId: '50ac7706-965e-455c-b9c9-3b84d608f5f1',
+                site: 'datadoghq.com',
+                service: 'demo-app',
+                env: 'prod',
+                // Specify a version number to identify the deployed version of your application in Datadog
+                // version: '1.0.0',
+                sessionSampleRate: 100,
+                sessionReplaySampleRate: 20,
+                trackBfcacheViews: true,
+                defaultPrivacyLevel: 'mask-user-input',
+            });
+        })
+    </script>
+
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/12/31/07/20251231073505-G5LNO08S.js" defer></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./pendo/init.js"></script>
