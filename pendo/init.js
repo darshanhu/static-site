@@ -28,19 +28,6 @@
 
   
   pendo.initialize({
-    guides: {
-      delay: true,
-      disabled: false,
-      disableCookies: true,
-      globalScripts: [
-        {
-          script: function (step, guide) {
-            console.log('Step ', step.id, ' has run');
-          }
-        }
-      ],
-      timeout: 30000
-    },
     visitor: {
       id: "darshan.hulswar@phoenix.com",
       email: "darshan.hulswar",
